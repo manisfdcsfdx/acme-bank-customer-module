@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ACME_AccountTriggerHandler</fullName>
+        <categories>AccountTriggerHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACME_AccountTriggerHandler</shortDescription>
+        <value>ACME_AccountTriggerHandler</value>
+    </labels>
+    <labels>
+        <fullName>ACME_FinancialAccountTriggerHandler</fullName>
+        <categories>FinancialAccountTriggerHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACME_FinancialAccountTriggerHandler</shortDescription>
+        <value>ACME_FinancialAccountTriggerHandler</value>
+    </labels>
+    <labels>
+        <fullName>ACME_FinancialTransactionTriggerHandler</fullName>
+        <categories>FinancialTransactionTriggerHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACME_FinancialTransactionTriggerHandler</shortDescription>
+        <value>ACME_FinancialTransactionTriggerHandler</value>
+    </labels>
+    <labels>
+        <fullName>FinancialTransactionCredit</fullName>
+        <categories>FinancialTransaction</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FinancialTransactionCredit</shortDescription>
+        <value>credit</value>
+    </labels>
+    <labels>
+        <fullName>FinancialTransactionDebit</fullName>
+        <categories>FinancialTransaction</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FinancialTransactionDebit</shortDescription>
+        <value>debit</value>
+    </labels>
+    <labels>
+        <fullName>NOTIMPLEMENTED</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NOTIMPLEMENTED</shortDescription>
+        <value>Method not implemented</value>
+    </labels>
+    <labels>
+        <fullName>PersonAccountRT</fullName>
+        <categories>Account RT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PersonAccountRT</shortDescription>
+        <value>PersonAccount</value>
+    </labels>
+    <labels>
+        <fullName>TRIGGER_AFTERDELETE</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRIGGER_AFTERDELETE</shortDescription>
+        <value>TRIGGER_AFTERDELETE</value>
+    </labels>
+    <labels>
+        <fullName>TRIGGER_AFTERINSERT</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRIGGER_AFTERINSERT</shortDescription>
+        <value>TRIGGER_AFTERINSERT</value>
+    </labels>
+    <labels>
+        <fullName>TRIGGER_AFTERUNDELETE</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRIGGER_AFTERUNDELETE</shortDescription>
+        <value>TRIGGER_AFTERUNDELETE</value>
+    </labels>
+    <labels>
+        <fullName>TRIGGER_AFTERUPDATE</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRIGGER_AFTERUPDATE</shortDescription>
+        <value>TRIGGER_AFTERUPDATE</value>
+    </labels>
+    <labels>
+        <fullName>TRIGGER_BEFOREDELETE</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRIGGER_BEFOREDELETE</shortDescription>
+        <value>TRIGGER_BEFOREDELETE</value>
+    </labels>
+    <labels>
+        <fullName>TRIGGER_BEFOREINSERT</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRIGGER_BEFOREINSERT</shortDescription>
+        <value>TRIGGER_BEFOREINSERT</value>
+    </labels>
+    <labels>
+        <fullName>TRIGGER_BEFOREUPDATE</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRIGGER_BEFOREUPDATE</shortDescription>
+        <value>TRIGGER_BEFOREUPDATE</value>
+    </labels>
+    <labels>
+        <fullName>TRIGGER_NEWLIST</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRIGGER_NEWLIST</shortDescription>
+        <value>newList</value>
+    </labels>
+    <labels>
+        <fullName>TRIGGER_OLDLIST</fullName>
+        <categories>Trigger framework</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRIGGER_OLDLIST</shortDescription>
+        <value>oldList</value>
+    </labels>
+</CustomLabels>

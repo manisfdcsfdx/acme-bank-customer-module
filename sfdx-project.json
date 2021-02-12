@@ -1,0 +1,18 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "customer-module",
+            "versionName": "cm 1.0",
+            "versionNumber": "1.0.0.NEXT"
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "50.0",
+    "packageAliases": {
+        "customer-module": "0Ho2w000000XZbZCAW",
+        "customer-module@1.0.0-1": "04t2w000007NG2NAAW"
+    }
+}

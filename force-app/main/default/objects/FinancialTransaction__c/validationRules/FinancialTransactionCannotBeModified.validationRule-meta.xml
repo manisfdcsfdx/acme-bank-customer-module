@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinancialTransactionCannotBeModified</fullName>
+    <active>true</active>
+    <description>Financial Transaction Cannot Be Modified</description>
+    <errorConditionFormula>OR( 
+					ISCHANGED(Amount__c) , 
+					ISCHANGED(Date__c) ,  
+					ISCHANGED(Time__c) ,
+					ISCHANGED(Merchant_ABN__c) , 
+					ISCHANGED(MerchantBSB__c) ,
+					ISCHANGED(Type__c) )</errorConditionFormula>
+    <errorMessage>A Financial transaction cannot be changed once it is created.</errorMessage>
+</ValidationRule>
