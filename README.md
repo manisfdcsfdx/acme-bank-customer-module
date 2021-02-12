@@ -99,7 +99,7 @@ This is a customer module for ACME bank demo project
 ``` 
 {
     "abid": "<abid from any newly created Account>",
-    "accountNumber": <abid from any newly created Financial Account>,
+    "accountNumber": <account number from newly created Financial Account above abid account>,
     "amount": 125.68,
     "currency": "AUD",
     "date": "2020/01/01",
