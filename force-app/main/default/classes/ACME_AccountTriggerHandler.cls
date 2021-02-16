@@ -1,5 +1,13 @@
+/**
+  * @author        Mani
+  * @date          12/02/2021
+  * @description   The purpose of this class is provide handler service to the ACME_AccountTrigger on Account object to perform process automation to the data in CRM.
+  */
 public with sharing class ACME_AccountTriggerHandler implements callable{
-    
+    /*
+    *   Populates alpha numeric unique identifier ABID on Accounts on creation
+    *   example ABC123456789
+    */
     public void populateABID(List<Account> newList){
         for(Account accRec : newList){
             if(accRec.isPersonAccount == true){
@@ -7,6 +15,10 @@ public with sharing class ACME_AccountTriggerHandler implements callable{
             }
         }
     }
+
+    /*
+    *   Publish CustomerDataSync__e platform event on account creation
+    */
     public void publishCustomerDataSync(List<Account> newList){
         List<CustomerDataSync__e> customerEvents = new List<CustomerDataSync__e>();
         for(Account accRec : newList){
@@ -18,6 +30,10 @@ public with sharing class ACME_AccountTriggerHandler implements callable{
         List<Database.SaveResult> results = EventBus.publish(customerEvents);
         //logging
     }
+    
+    /*
+    *   this function will be invoked by the trigger framework to process local functions on sepcified conditions
+    */
     public Object call(String action, Map<String, Object> args) {
 
         List<Account> newList = (List<Account>) args.get(System.Label.TRIGGER_NEWLIST);

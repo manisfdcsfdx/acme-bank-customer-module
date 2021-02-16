@@ -128,4 +128,20 @@
         <shortDescription>TRIGGER_OLDLIST</shortDescription>
         <value>oldList</value>
     </labels>
+    <labels>
+        <fullName>InsufficientBalance</fullName>
+        <categories>TransactionError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>InsufficientBalance</shortDescription>
+        <value>You don't have enough balance in your account to process this transaction.</value>
+    </labels>
+    <labels>
+        <fullName>GenericTransactionError</fullName>
+        <categories>TransactionError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GenericTransactionError</shortDescription>
+        <value>Error occured, could not process the transaction at the moment.</value>
+    </labels>
 </CustomLabels>

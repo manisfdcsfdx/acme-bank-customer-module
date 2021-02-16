@@ -26,7 +26,7 @@ This is a customer module for ACME bank demo project
 4. Install the app to your scratch org:
 
     ```
-    sfdx force:package:install -p customer-module@1.0.0-1 -w 30 -r 
+    sfdx force:package:install -p customer-module@1.1.0-1 -w 30 -r 
     ```
 
 5. Assign the **ACME** permission set to the default user:
@@ -93,13 +93,13 @@ This is a customer module for ACME bank demo project
 3. Login as test user
 4. In App Launcher, select the **ACME** app.
 5. Create Account and Financial Account
-6. Use workbench to Subscribe CustomerDataSync__e platform and motiner the Account creation events
+6. Use workbench to Subscribe CustomerDataSync__e platform and moniter the Account creation events
 7. Test apex rest service `/services/apexrest/accounttransaction/` using below sample
 
 ``` 
 {
     "abid": "<abid from any newly created Account>",
-    "accountNumber": <account number from newly created Financial Account above abid account>,
+    "accountNumber": <account number from newly created Financial Account with above abid account>,
     "amount": 125.68,
     "currency": "AUD",
     "date": "2020/01/01",
@@ -107,7 +107,7 @@ This is a customer module for ACME bank demo project
     "merchantBSB": 123456,
     "merchantName": "Beau Flowers",
     "time": "17:32:25",
-    "type": "debit"
+    "type": "credit"
 }
 ```
 

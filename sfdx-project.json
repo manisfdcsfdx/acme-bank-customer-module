@@ -4,8 +4,8 @@
             "path": "force-app",
             "default": true,
             "package": "customer-module",
-            "versionName": "cm 1.0",
-            "versionNumber": "1.0.0.NEXT"
+            "versionName": "cm 1.1",
+            "versionNumber": "1.1.0.NEXT"
         }
     ],
     "namespace": "",
@@ -13,6 +13,7 @@
     "sourceApiVersion": "50.0",
     "packageAliases": {
         "customer-module": "0Ho2w000000XZbZCAW",
-        "customer-module@1.0.0-1": "04t2w000007NG2NAAW"
+        "customer-module@1.0.0-1": "04t2w000007NG2NAAW",
+        "customer-module@1.1.0-1": "04t2w000007NG3zAAG"
     }
 }

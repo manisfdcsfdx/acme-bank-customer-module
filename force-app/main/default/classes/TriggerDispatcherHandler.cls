@@ -1,5 +1,13 @@
+/**
+  * @author        Mani
+  * @date          12/02/2021
+  * @description   The purpose of this class is to provide utility trigger framework to avoid having the boiler plate code in all apex triggers.
+  */
 public with sharing class TriggerDispatcherHandler {
     
+    /*
+    *   Executes the given handler on a apex trigger event.
+    */
     public static void execute(String handler){
         String triggerContext = '';
         if (Trigger.isBefore ){

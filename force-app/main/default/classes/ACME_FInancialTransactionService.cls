@@ -1,5 +1,13 @@
+/**
+  * @author        Mani
+  * @date          12/02/2021
+  * @description   The purpose of this class is provide Apex rest service to be exposed as a API to external to be able to send financial transactions into CRM.
+  */
 @RestResource(urlMapping='/accounttransaction/*')
 global with sharing class ACME_FInancialTransactionService {
+    /*
+    *   HTTP post service to create financial transaction
+    */
     @HttpPost
     global static string doPost(){
         RestRequest req = RestContext.request;
@@ -45,7 +53,18 @@ global with sharing class ACME_FInancialTransactionService {
         finTran.Type__c = tranDetails.transactionType;
         finTran.Currency_Type__c = tranDetails.currencyType;
 
-        Database.insert(finTran);
+        Database.SaveResult sr = Database.insert(finTran,false);
+        if (!sr.isSuccess()) {
+            res.statusCode = 400;
+            string errorMessage = System.Label.GenericTransactionError;
+            for(Database.Error err : sr.getErrors()) {
+                if(err.getMessage().contains(System.Label.InsufficientBalance)){
+                    errorMessage = System.Label.InsufficientBalance;
+                }
+            }
+            return errorMessage;
+        }
+
         res.statusCode = 200;
         return 'Trasaction processed successfully.';
 

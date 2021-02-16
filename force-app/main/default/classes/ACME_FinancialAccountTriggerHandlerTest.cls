@@ -1,8 +1,13 @@
+/**
+  * @author        Mani
+  * @date          12/02/2021
+  * @description   The purpose of this class is to cover the until test for ACME_FinancialAccountTriggerHandler.
+  */
 @isTest
 private class ACME_FinancialAccountTriggerHandlerTest {
     @testSetUp
     static void setup() {
-        Profile readOnlyProfile = [SELECT Id FROM Profile WHERE Name = 'Read Only'];
+        Profile readOnlyProfile = [SELECT Id FROM Profile WHERE Name = 'Standard User'];
         
         User testUser = new User(FirstName = 'Test',
                                     LastName = 'user',
